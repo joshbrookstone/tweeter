@@ -1,0 +1,22 @@
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background-color: rgb(224, 199, 160); 
+  height: 120px;
+  color: #ffffff;
+  width: 100vw;
+  padding: 1.5em;
+  
+}
+
+span {
+  font-family: 'Bungee', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+ 
+}
+
+
+
+
