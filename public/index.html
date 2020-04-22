@@ -30,11 +30,7 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-   
-
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+  
   </head>
 
   <body>
@@ -54,7 +50,7 @@
     </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main class="container" id="tweets-container" >
 
      <section class="new-tweet">
        <form action="/tweets/" method="POST">
@@ -102,9 +98,12 @@
         
       </section>
     </main>
-  </body>
-   <!--Char Counter JS-->
+    <!--Char Counter JS-->
    <script type="text/javascript" src="/scripts/compose-char-counter.js"></script>
+
+   <!-- App JS -->
+   <script type="text/javascript" src="/scripts/client.js"></script>
+  </body>
 </html>
 
 
