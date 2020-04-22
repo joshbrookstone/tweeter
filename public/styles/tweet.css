@@ -30,14 +30,39 @@
   color: #545149;
 }
 
-.tweet footer {
+.postDate {
   color: #666235;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   font-size: 12px;
   background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
   background-color: hsl(36, 60%, 67%);
+  
 } 
+
+.retweet {
+  float: right;
+  margin-top: -28px;
+  height: 20px;
+  margin-right: 46px;
+  filter: opacity(0.6);
+}
+
+.like {
+  float: right;
+  margin-top: -28px;
+  height: 20px;
+  margin-right: 16px;
+  filter: opacity(0.6);
+}
+
+.flag{
+  float: right;
+  margin-top: -28px;
+  height: 20px;
+  margin-right: 76px;
+  filter: opacity(0.6);
+}
 
 .avatar {
   float: left;
