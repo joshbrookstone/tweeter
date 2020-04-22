@@ -21,10 +21,17 @@
 
 
     <!--New-Tweet CSS-->
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/new-tweet.css" 
+    type="text/css"/>
+
+    <!--Tweet CSS-->
+
+    <link rel="stylesheet" href="/styles/tweet.css"/>
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+   
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -36,7 +43,7 @@
       <span>tweeter</span>
     </nav>
 
-    <header>
+    <header class="logo">
       <div class="photo">
         <img src="/images/profile-hex.png">
       </div>
@@ -48,21 +55,50 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <div>
+
      <section class="new-tweet">
        <form action="/tweets/" method="POST">
         <label for="tweet-text">What are you Humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
           <button type="submit"> Tweet</button>
-        <output name="counter" class="counter" for="tweet-text">140</output>
-  
-        
-      </form>
+        <output name="counter" class="counter" for="tweet-text">140</output>        
+        </form>
      </section>
-    </div>
 
+      <section class="tweets">
+        <article class="tweet">
+          <header>
+            <img class="avatar" src="https://i.imgur.com/73hZDYK.png">
+            <h2 class="name">Newton</h2>
+            <h2 class="handle">@SirIsaac</h2>
+          </header>
+          <p>
+            If I have seen further it is by standing on the shoulders of giants
+          </p>
+          <footer>
+            <h3>Posted 10 days ago</h3>
+          </footer>
+        </article>
+
+        <article class="tweet">
+          <header>
+            <img class="avatar" src="https://i.imgur.com/nlhLi3I.png">
+            <h2 class="name">Descartes</h2>
+            <h2 class="handle">@rd</h2>
+          </header>
+          <p>
+            Je pense , donc je suis
+          </p>
+          <footer>
+            <h3>Posted 8 days ago</h3>
+          </footer>
+        </article>
+        
+      </section>
     </main>
   </body>
+   <!--Char Counter JS-->
+   <script type="text/javascript" src="/scripts/compose-char-counter.js"></script>
 </html>
 
 

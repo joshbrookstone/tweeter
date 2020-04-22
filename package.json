@@ -18,5 +18,12 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
-  }
+  },
+  "eslintConfig": {
+    "env": {
+        "browser": true,
+        "node": true,
+        "jquery" : true
+    }
+}
 }
