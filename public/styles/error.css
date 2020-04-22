@@ -1,0 +1,21 @@
+.tooManyError {
+  text-align: center;
+  display: none;
+  border: rgb(167, 23, 23);
+  border-width: 10px;
+  border-style: solid;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: rgb(167, 23, 23);
+}
+
+.noInputError {
+  display: none;
+  text-align: center;
+  border: rgb(167, 23, 23);
+  border-width: 10px;
+  border-style: solid;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: rgb(167, 23, 23);
+}

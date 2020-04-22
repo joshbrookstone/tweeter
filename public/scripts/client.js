@@ -77,24 +77,39 @@ $('form').submit(function(event) {
   const formData = $(this).serialize();
 
   console.log("counter is", counter);
-  // make ajax post with extracted data
+ 
   if (counter > 0 && counter <= 140) {
     $.post('/tweets/', formData)
 
-    // if sucess - render updated posts
+    
       .then(() => {
         $(self)[0].reset();
         loadTweets(formData);
         $(".counter").text(140);
       })
-    // else - do nothing; console.error
+
       .catch(err => {
         console.log('err :>> ', err);
         alert(err.responseJSON.error);
       });
-  } else {
-    alert("invalid message");
+
   }
+
+  if (counter > 140) {
+    $(".tooManyError").slideDown("slow");
+    setTimeout(() => {
+      $('.tooManyError').slideUp("slow");
+    }, 2000);
+  }
+
+  if (counter === 0) {
+    $(".noInputError").slideDown("slow");
+    setTimeout(() => {
+      $('.noInputError').slideUp("slow");
+    }, 2000);
+  }
+  
+
 });
 
 const loadTweets = function() {
