@@ -46,6 +46,7 @@
   height: 20px;
   margin-right: 46px;
   filter: opacity(0.6);
+  cursor: pointer;
 }
 
 .like {
@@ -54,6 +55,7 @@
   height: 20px;
   margin-right: 16px;
   filter: opacity(0.6);
+  cursor: pointer;
 }
 
 .flag{
@@ -62,6 +64,7 @@
   height: 20px;
   margin-right: 76px;
   filter: opacity(0.6);
+  cursor: pointer;
 }
 
 .avatar {

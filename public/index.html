@@ -53,7 +53,7 @@
     <main class="container" id="tweets-container" >
 
      <section class="new-tweet">
-       <form action="/tweets/" method="POST">
+       <form id="form" action="/tweets/" method="POST">
         <label for="tweet-text">What are you Humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
           <button type="submit"> Tweet</button>
@@ -62,41 +62,9 @@
      </section>
 
       <section class="tweets">
-        <article class="tweet">
-          <header>
-            <img class="avatar" src="https://i.imgur.com/73hZDYK.png">
-            <h2 class="name">Newton</h2>
-            <h2 class="handle">@SirIsaac</h2>
-          </header>
-          <p>
-            If I have seen further it is by standing on the shoulders of giants
-          </p>
-          <footer>
-            <h3 class="postDate">10 days ago</h3>
-            <img class="retweet" src="https://img.icons8.com/material-outlined/24/000000/retweet.png"/>
-            <img class="like" src="https://img.icons8.com/material-outlined/24/000000/hearts.png"/>
-            <img class="flag" src="https://img.icons8.com/material-rounded/24/000000/flag.png"/>
-          </footer>
-        </article>
-
-        <article class="tweet">
-          <header>
-            <img class="avatar" src="https://i.imgur.com/nlhLi3I.png">
-            <h2 class="name">Descartes</h2>
-            <h2 class="handle">@rd</h2>
-          </header>
-          <p>
-            Je pense , donc je suis
-          </p>
-          <footer>
-            <h3 class="postDate">8 days ago</h3>
-            <img class="retweet" src="https://img.icons8.com/material-outlined/24/000000/retweet.png"/>
-            <img class="like" src="https://img.icons8.com/material-outlined/24/000000/hearts.png"/>
-            <img class="flag" src="https://img.icons8.com/material-rounded/24/000000/flag.png"/>
-          </footer>
-        </article>
         
       </section>
+
     </main>
     <!--Char Counter JS-->
    <script type="text/javascript" src="/scripts/compose-char-counter.js"></script>
@@ -105,6 +73,5 @@
    <script type="text/javascript" src="/scripts/client.js"></script>
   </body>
 </html>
-
 
 

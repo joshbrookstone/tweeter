@@ -3,42 +3,22 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-
-
-const data = [
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1587578589698
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1461113959088
-  }
-];
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 const renderTweets = function(data) {
 
+  $('.tweets').empty();
+
   for (let tweet of data) {
     const $tweet = createTweetElement(tweet);
-    $('#tweets-container').append($tweet);
+    $('.tweets').prepend($tweet);
   }
 
 };
-
 
 
 const createTweetElement = function(tweet) {
@@ -47,7 +27,7 @@ const createTweetElement = function(tweet) {
   let avater = tweet.user.avatars;
   let handle = tweet.user.handle;
   let content = tweet.content.text;
-  let postDate = tweet.created_at;
+  let postDate = tweet.createdAt;
   
   let timeDifference = (new Date()).getTime() - postDate;
   let dayDifference = Math.ceil((((timeDifference / 1000) / 60) / 60) / 24);
@@ -69,12 +49,12 @@ const createTweetElement = function(tweet) {
    `
     <article class="tweet">
       <header>
-        <img class="avatar" src=${avater}>
-        <h2 class="name">${name}</h2>
-        <h2 class="handle">${handle}</h2>
+        <img class="avatar" src=${(avater)}>
+        <h2 class="name">${(name)}</h2>
+        <h2 class="handle">${(handle)}</h2>
       </header>
       <p>
-        ${content}
+        ${escape(content)}
       </p>
       <footer>
         <h3 class="postDate">${sentencetoLoad(dayDifference)}</h3>
@@ -90,5 +70,40 @@ const createTweetElement = function(tweet) {
 
 };
 
+$('form').submit(function(event) {
+  event.preventDefault();
+  const self = this;
+  const counter = 140 - $(".counter").val();
+  const formData = $(this).serialize();
 
-renderTweets(data);
+  console.log("counter is", counter);
+  // make ajax post with extracted data
+  if (counter > 0 && counter <= 140) {
+    $.post('/tweets/', formData)
+
+    // if sucess - render updated posts
+      .then(() => {
+        $(self)[0].reset();
+        loadTweets(formData);
+        $(".counter").text(140);
+      })
+    // else - do nothing; console.error
+      .catch(err => {
+        console.log('err :>> ', err);
+        alert(err.responseJSON.error);
+      });
+  } else {
+    alert("invalid message");
+  }
+});
+
+const loadTweets = function() {
+  $.getJSON('/tweets')
+    .then((posts) => {
+      console.log('posts :>> ', posts);
+      renderTweets(posts);
+    });
+};
+
+loadTweets();
+
