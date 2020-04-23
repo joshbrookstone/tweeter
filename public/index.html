@@ -38,7 +38,10 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <div>
+        <span>tweeter</span>
+        <span class="form-toggle">Write a new tweet</span>
+      </div>
     </nav>
 
     <header class="logo">
@@ -47,7 +50,7 @@
       </div>
       <br>
       <div>
-        <h2 class="name">Your Name</h2>
+        <h2 class="name">Josh B</h2>
       </div>
     </header>
 
@@ -56,7 +59,7 @@
 
      <section class="new-tweet">
        <h2 class="tooManyError">too many words</h2>
-       <h2 class="noInputError">Please input something</h2>
+       <h2 class="noInputError">please input something</h2>
        <form id="form" action="/tweets/" method="POST">
         <label for="tweet-text">What are you Humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
@@ -65,9 +68,7 @@
         </form>
      </section>
 
-      <section class="tweets">
-        
-      </section>
+      <section class="tweets"></section>
 
     </main>
     <!--Char Counter JS-->
@@ -75,6 +76,9 @@
 
    <!-- App JS -->
    <script type="text/javascript" src="/scripts/client.js"></script>
+
+   <!--Form Toggle JS-->
+   <script type="text/javascript" src="/scripts/form-toggle.js"></script>
   </body>
 </html>
 

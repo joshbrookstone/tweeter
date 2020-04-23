@@ -14,9 +14,20 @@ span {
   font-family: 'Bungee', sans-serif;
   font-weight: 700;
   font-size: 42px;
+  
  
 }
 
-
+.form-toggle {
+  float: right;
+  font-size: 21px;
+  padding: 19px;
+  border-style: dotted;
+  border-width: 9px;
+  cursor: pointer;
+  margin: -18px;
+  margin-right: 41px;
+  margin-bottom: -15px
+}
 
 
