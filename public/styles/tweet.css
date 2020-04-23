@@ -1,89 +1,284 @@
 .tweet {
   
-  background-color: hsl(36, 60%, 67%);
-  background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
-  border-radius: 10px;
-  border: #d8a149d8;
-  border-style: solid;
-  margin-top: 80px;
-  margin-bottom: 50px;
-  border-width: 6px;
-  padding: 12px;
-}
+    background-color: hsl(36, 60%, 67%);
+    background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+    border-radius: 10px;
+    border: #d8a149d8;
+    border-style: solid;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-width: 6px;
+    padding: 12px;
+  }
+  
+  .tweet:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+   
+  
+  .tweet header {
+    font-size: 12px;
+    
+  }
+  
+  .tweet .name {
+    float: left;
+    font-size: 18px;
+    margin-left: 14px;
+    margin-top: 19px;
+    color: #545149;
+  }
+  
+  .postDate {
+    color: #666235;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+    background-color: hsl(36, 60%, 67%);
+    
+  } 
+  
+  .retweet {
+    float: right;
+    margin-top: -28px;
+    height: 20px;
+    margin-right: 46px;
+    filter: opacity(0.6);
+    cursor: pointer;
+  }
+  
+  .like {
+    float: right;
+    margin-top: -28px;
+    height: 20px;
+    margin-right: 16px;
+    filter: opacity(0.6);
+    cursor: pointer;
+  }
+  
+  .flag{
+    float: right;
+    margin-top: -28px;
+    height: 20px;
+    margin-right: 76px;
+    filter: opacity(0.6);
+    cursor: pointer;
+  }
+  
+  .avatar {
+    float: left;
+    height: 40px;
+  }
+  
+  .tweet p {
+    border-bottom: 4px solid #666235;
+    text-align: left;
+    border-bottom-width: 4px;
+    padding-top: 50px;
+    padding-bottom: 32px;
+  
+  }
+  
+  .handle {
+    float: right;
+    color: #545149;
+    margin-right: 17px;
+    margin-top: 16px;
+  }
+  
 
-.tweet:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);;
-  transition: box-shadow 0.3s ease-in-out;
-}
- 
 
-.tweet header {
-  font-size: 12px;
+@media only screen and (min-width: 768px) {
+  .tweet {
+  
+    background-color: hsl(36, 60%, 67%);
+    background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+    border-radius: 10px;
+    border: #d8a149d8;
+    border-style: solid;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-width: 6px;
+    padding: 12px;
+  }
+  
+  .tweet:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+   
+  
+  .tweet header {
+    font-size: 12px;
+    
+  }
+  
+  .tweet .name {
+    float: left;
+    font-size: 18px;
+    margin-left: 14px;
+    margin-top: 19px;
+    color: #545149;
+  }
+  
+  .postDate {
+    color: #666235;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+    background-color: hsl(36, 60%, 67%);
+    
+  } 
+  
+  .retweet {
+    float: right;
+    margin-top: -28px;
+    height: 20px;
+    margin-right: 46px;
+    filter: opacity(0.6);
+    cursor: pointer;
+  }
+  
+  .like {
+    float: right;
+    margin-top: -28px;
+    height: 20px;
+    margin-right: 16px;
+    filter: opacity(0.6);
+    cursor: pointer;
+  }
+  
+  .flag{
+    float: right;
+    margin-top: -28px;
+    height: 20px;
+    margin-right: 76px;
+    filter: opacity(0.6);
+    cursor: pointer;
+  }
+  
+  .avatar {
+    float: left;
+    height: 40px;
+  }
+  
+  .tweet p {
+    border-bottom: 4px solid #666235;
+    text-align: left;
+    border-bottom-width: 4px;
+    padding-top: 50px;
+    padding-bottom: 32px;
+  
+  }
+  
+  .handle {
+    float: right;
+    color: #545149;
+    margin-right: 17px;
+    margin-top: 16px;
+  }
   
 }
 
-.tweet .name {
-  float: left;
-  font-size: 18px;
-  margin-left: 14px;
-  margin-top: 19px;
-  color: #545149;
-}
 
-.postDate {
-  color: #666235;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
-  background-color: hsl(36, 60%, 67%);
+@media only screen and (min-width: 1024px) {
+  .tweet {
   
-} 
-
-.retweet {
-  float: right;
-  margin-top: -28px;
-  height: 20px;
-  margin-right: 46px;
-  filter: opacity(0.6);
-  cursor: pointer;
+    background-color: hsl(36, 60%, 67%);
+    background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+    border-radius: 10px;
+    border: #d8a149d8;
+    border-style: solid;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-width: 6px;
+    padding: 12px;
+  }
+  
+  .tweet:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+   
+  
+  .tweet header {
+    font-size: 12px;
+    
+  }
+  
+  .tweet .name {
+    float: left;
+    font-size: 18px;
+    margin-left: 14px;
+    margin-top: 19px;
+    color: #545149;
+  }
+  
+  .postDate {
+    color: #666235;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+    background-color: hsl(36, 60%, 67%);
+    
+  } 
+  
+  .retweet {
+    float: right;
+    margin-top: -28px;
+    height: 20px;
+    margin-right: 46px;
+    filter: opacity(0.6);
+    cursor: pointer;
+  }
+  
+  .like {
+    float: right;
+    margin-top: -28px;
+    height: 20px;
+    margin-right: 16px;
+    filter: opacity(0.6);
+    cursor: pointer;
+  }
+  
+  .flag{
+    float: right;
+    margin-top: -28px;
+    height: 20px;
+    margin-right: 76px;
+    filter: opacity(0.6);
+    cursor: pointer;
+  }
+  
+  .avatar {
+    float: left;
+    height: 40px;
+  }
+  
+  .tweet p {
+    border-bottom: 4px solid #666235;
+    text-align: left;
+    border-bottom-width: 4px;
+    padding-top: 50px;
+    padding-bottom: 32px;
+  
+  }
+  
+  .handle {
+    float: right;
+    color: #545149;
+    margin-right: 17px;
+    margin-top: 16px;
+  }
+  
 }
 
-.like {
-  float: right;
-  margin-top: -28px;
-  height: 20px;
-  margin-right: 16px;
-  filter: opacity(0.6);
-  cursor: pointer;
-}
 
-.flag{
-  float: right;
-  margin-top: -28px;
-  height: 20px;
-  margin-right: 76px;
-  filter: opacity(0.6);
-  cursor: pointer;
-}
 
-.avatar {
-  float: left;
-  height: 40px;
-}
 
-.tweet p {
-  border-bottom: 4px solid #666235;
-  text-align: left;
-  border-bottom-width: 4px;
-  padding-top: 50px;
-  padding-bottom: 32px;
 
-}
 
-.handle {
-  float: right;
-  color: #545149;
-  margin-right: 17px;
-  margin-top: 16px;
-}

@@ -1,33 +1,104 @@
-nav {
-  position: fixed;
-  top: 0;
-  z-index: 5;
-  background-color: rgb(224, 199, 160); 
-  height: 120px;
-  color: #544f47;
-  width: 100vw;
-  padding: 1.5em;
-  
+  nav {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: rgb(224, 199, 160);
+    color: #544f47;
+    width: 100vw;
+    padding: 1.5em;
+  }
+
+  span {
+    font-family: 'Bungee', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .form-toggle {
+    font-size: 14px;
+    padding: 9px;
+    border-style: solid;
+    border-width: 7px;
+    cursor: pointer;
+  }
+
+  .form-toggle:hover {
+    box-shadow: 0 3px 13px rgba(0,0,0,0.3);;
+    transition: box-shadow 0.4s ease-in-out;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  nav {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: rgb(224, 199, 160);
+    color: #544f47;
+    width: 100vw;
+    padding: 1.5em;
+  }
+
+  span {
+    font-family: 'Bungee', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .form-toggle {
+    font-size: 30px;
+    padding: 9px;
+    border-style: solid;
+    border-width: 7px;
+    cursor: pointer;
+  }
+
+  .form-toggle:hover {
+    box-shadow: 0 3px 13px rgba(0,0,0,0.3);;
+    transition: box-shadow 0.4s ease-in-out;
+  }
 }
 
-span {
-  font-family: 'Bungee', sans-serif;
-  font-weight: 700;
-  font-size: 42px;
-  
- 
-}
+@media only screen and (min-width: 1024px) {
+  nav {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: rgb(224, 199, 160);
+    color: #544f47;
+    width: 100vw;
+    padding: 1.5em;
+  }
 
-.form-toggle {
-  float: right;
-  font-size: 21px;
-  padding: 19px;
-  border-style: dotted;
-  border-width: 9px;
-  cursor: pointer;
-  margin: -18px;
-  margin-right: 41px;
-  margin-bottom: -15px
-}
+  span {
+    font-family: 'Bungee', sans-serif;
+    font-weight: 700;
+    font-size: 57px;
+  }
 
+  .form-toggle {
+    font-size: 40px;
+    padding: 9px;
+    border-style: solid;
+    border-width: 7px;
+    cursor: pointer;
+  }
+
+  .form-toggle:hover {
+    box-shadow: 0 3px 13px rgba(0,0,0,0.3);;
+    transition: box-shadow 0.4s ease-in-out;
+  }
+}
 

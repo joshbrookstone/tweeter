@@ -1,57 +1,179 @@
+  .container {
+    width: auto;
+    padding: 1.5em;
+    background-color: hsl(36, 60%, 67%);
+    background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+    padding-bottom: 50px;
+  }
+  
+  .new-tweet  {
+    color: #666235;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+
+  }
+  
+  .new-tweet button {
+    font-family: "Bungee", sans-serif;
+    background-color: #666235;
+    color: azure;
+    float: left;
+    border: none;
+    font-size: 32px;
+    
+  }
+  
+  .counter {
+    font-family: "Bungee", sans-serif;
+    float: right;
+    font-size: 32px;
+    color: #666235;
+  }
+  
+  #tweet-text {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    background: transparent;
+    border-bottom: 5px solid papayawhip;
+    font-weight: bold;
+    font-size: 32px;
+    height: 45px;
+    resize: none;
+    color: papayawhip;
+  }
+  
+  .over {
+    color: red;
+  }
+  
+  
 
 
-.container {
-  width: auto;
-  padding: 1.5em;
-  background-color: hsl(36, 60%, 67%);
-  background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
-  padding-bottom: 50px;
-}
-
-.new-tweet  {
-  color: #666235;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-}
-
-.new-tweet button {
-  font-family: "Bungee", sans-serif;
-  background-color: #666235;
-  color: azure;
-  float: left;
-  border: none;
-  font-size: 32px;
+@media only screen and (min-width: 768px) {
+  .container {
+    width: auto;
+    padding: 1.5em;
+    background-color: hsl(36, 60%, 67%);
+    background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+    padding-bottom: 50px;
+  }
+  
+  .new-tweet  {
+    color: #666235;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+  }
+  
+  .new-tweet button {
+    font-family: "Bungee", sans-serif;
+    background-color: #666235;
+    color: azure;
+    float: left;
+    border: none;
+    font-size: 32px;
+    
+  }
+  
+  .counter {
+    font-family: "Bungee", sans-serif;
+    float: right;
+    font-size: 32px;
+    color: #666235;
+  }
+  
+  #tweet-text {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    background: transparent;
+    border-bottom: 5px solid papayawhip;
+    font-weight: bold;
+    font-size: 32px;
+    height: 45px;
+    resize: none;
+    color: papayawhip;
+  }
+  
+  .over {
+    color: red;
+  }
+  
   
 }
 
-.counter {
-  font-family: "Bungee", sans-serif;
-  float: right;
-  font-size: 32px;
-  color: #666235;
+@media only screen and (min-width: 1024px) {
+  .container {
+    /* width: auto;
+    padding: 1.5em;
+    background-color: hsl(36, 60%, 67%);
+    background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+    padding-bottom: 50px; */
+    width: 70%;
+    /* height: 100vh; */
+    margin: 0;
+    padding-top: 150px;
+    /* overflow-y: scroll; */
+    /* align-self: flex-end; */
+    margin-left: auto;
+  }
+  
+  .new-tweet  {
+    color: #666235;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+  }
+  
+  .new-tweet button {
+    font-family: "Bungee", sans-serif;
+    background-color: #666235;
+    color: azure;
+    float: left;
+    border: none;
+    font-size: 32px;
+    
+  }
+  
+  .counter {
+    font-family: "Bungee", sans-serif;
+    float: right;
+    font-size: 32px;
+    color: #666235;
+  }
+  
+  #tweet-text {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    background: transparent;
+    border-bottom: 5px solid papayawhip;
+    font-weight: bold;
+    font-size: 32px;
+    height: 45px;
+    resize: none;
+    color: papayawhip;
+  }
+  
+  .over {
+    color: red;
+  }
+  
 }
 
-#tweet-text {
-  width: 100%;
-  border: 0;
-  outline: 0;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 10px;
-  background: transparent;
-  border-bottom: 5px solid papayawhip;
-  font-weight: bold;
-  font-size: 32px;
-  height: 45px;
-  resize: none;
-  color: papayawhip;
-}
 
-.over {
-  color: red;
-}
 
-/* #form {
-  display: none;
-} */
+
+
+

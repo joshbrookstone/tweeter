@@ -15,3 +15,62 @@
 .photo {
   padding-top: 40px;
 }
+
+
+
+@media only screen and (min-width: 768px) {
+  
+  .logo {
+    height: 400px;
+    position: relative;
+    text-align: center;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    background-color: #d19732;
+    margin-top: 120px;
+  }
+
+  .name {
+    margin-top: 0px;
+    color: #544f47
+  } 
+
+  .photo {
+    padding-top: 40px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+  
+  .logo {
+
+    position: fixed;
+    text-align: center;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    background-color: #d19732;
+    margin-top: 120px;
+    width: 30%;
+    left: 0;
+    height: 163%;    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    margin-top: 0px;
+    color: #544f47
+  } 
+
+  .photo {
+    margin-top: 60%;
+    width: 319px;
+    position: sticky;
+  }
+
+}
+
+
+
