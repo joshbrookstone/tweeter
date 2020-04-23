@@ -112,17 +112,9 @@
 
 @media only screen and (min-width: 1024px) {
   .container {
-    /* width: auto;
-    padding: 1.5em;
-    background-color: hsl(36, 60%, 67%);
-    background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
-    padding-bottom: 50px; */
     width: 70%;
-    /* height: 100vh; */
     margin: 0;
     padding-top: 150px;
-    /* overflow-y: scroll; */
-    /* align-self: flex-end; */
     margin-left: auto;
   }
   
@@ -170,6 +162,10 @@
     color: red;
   }
   
+}
+
+#form {
+  display: none;
 }
 
 
