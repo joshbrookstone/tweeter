@@ -78,6 +78,7 @@
     border-bottom-width: 4px;
     padding-top: 50px;
     padding-bottom: 32px;
+    overflow-wrap: break-word;
   
   }
   
@@ -171,6 +172,7 @@
     border-bottom-width: 4px;
     padding-top: 50px;
     padding-bottom: 32px;
+    overflow-wrap: break-word
   
   }
   
@@ -265,6 +267,7 @@
     border-bottom-width: 4px;
     padding-top: 50px;
     padding-bottom: 32px;
+    overflow-wrap: break-word
   
   }
   
