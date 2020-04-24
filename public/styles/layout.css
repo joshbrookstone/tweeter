@@ -10,9 +10,7 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
+
 
 body {
   color: #545149;
@@ -21,9 +19,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+
 
 main {
   background-color: #f4f1ec;
@@ -52,9 +48,7 @@ main {
     font-family: 'Source Sans Pro', sans-serif;
   }
 
-  /*
-  * Additional CSS can be defined below or in other CSS files, as per instructions
-  */
+
 
   main {
     background-color: #f4f1ec;
@@ -73,10 +67,7 @@ main {
     box-sizing: inherit;
   }
 
-  /*
-  * Global layout stuff
-  */
-
+  
   body {
     color: #545149;
     background-color: #f4f1ec;
@@ -84,9 +75,6 @@ main {
     font-family: 'Source Sans Pro', sans-serif;
   }
 
-  /*
-  * Additional CSS can be defined below or in other CSS files, as per instructions
-  */
 
   main {
     background-color: #f4f1ec;
